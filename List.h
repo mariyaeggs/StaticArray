@@ -9,7 +9,7 @@
  * Professor: Dr. Feiling Jia
  * Source: CLion 2016.3.2 on 1/8/2017
  *
- * Header definitions for linked list class.
+ * Header file defines data type List for list class.
  *
  * @author Mariya Eggensperger
 */
