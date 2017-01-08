@@ -12,7 +12,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bb5c6853-6b94-4cc4-a7c1-e98925b0a153" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/List.cpp" afterPath="$PROJECT_DIR$/List.cpp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/List.h" afterPath="$PROJECT_DIR$/List.h" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
@@ -55,7 +54,7 @@
         <entry file="file://$PROJECT_DIR$/List.h">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="540">
-              <caret line="36" column="15" lean-forward="false" selection-start-line="36" selection-start-column="15" selection-end-line="36" selection-end-column="15" />
+              <caret line="36" column="14" lean-forward="false" selection-start-line="36" selection-start-column="9" selection-end-line="36" selection-end-column="14" />
               <folding />
             </state>
           </provider>
@@ -340,12 +339,12 @@
       <option name="presentableId" value="Default" />
       <updated>1483905554630</updated>
       <workItem from="1483905556219" duration="2336000" />
-      <workItem from="1483907916429" duration="1478000" />
+      <workItem from="1483907916429" duration="1512000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3814000" />
+    <option name="totallyTimeSpent" value="3848000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -464,7 +463,7 @@
     <entry file="file://$PROJECT_DIR$/List.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="540">
-          <caret line="36" column="15" lean-forward="false" selection-start-line="36" selection-start-column="15" selection-end-line="36" selection-end-column="15" />
+          <caret line="36" column="14" lean-forward="false" selection-start-line="36" selection-start-column="9" selection-end-line="36" selection-end-column="14" />
           <folding />
         </state>
       </provider>

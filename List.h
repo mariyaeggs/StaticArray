@@ -34,7 +34,7 @@ public:
     List(); // Constructor
     bool empty() const;
     void insert(ElementType item, int position);
-    void delete(int position);
+    void erase(int position);
     void display(ostream & out) const;
 
 private:
