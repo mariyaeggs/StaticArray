@@ -48,7 +48,7 @@ ostream & operator << (ostream & out, const List & aList) {
 /**
  * Function defines insertion methods for List class
  *
- * @param args If insert does not surpass CAPACITY or is illegally inserted, allow insertion
+ * @param args If insert() does not surpass CAPACITY or is illegally inserted, allow insertion
  * @return Return if insertion surpasses CAPACITY or is illegal, maximum array index surpassed
 */
 void List::insert(ElementType item, int position) {
@@ -57,10 +57,10 @@ void List::insert(ElementType item, int position) {
       exit(1); // Terminate program
    }
    if (position<0 || position>mySize) {
-      cerr << "Illegal insertion at" << position;
+      cerr << "Illegal insertion at position " << position;
       return; // Return function
    }
-   // Else if all parameters are approved. Decrement over data elements
+   // Else if all parameters are checked. Decrement over data elements
    // Shift elements to the right for memory allocation/space
    for(int i=mySize; i>position; i--) {
       myArray[i]= myArray[i-1];
@@ -72,6 +72,23 @@ void List::insert(ElementType item, int position) {
 /**
  * Function defines deletion methods for List class
  *
- * @param args If insert does not surpass CAPACITY or is illegally inserted, allow insertion
- * @return Return if insertion surpasses CAPACITY or is illegal, maximum array index surpassed
+ * @param args If erase() does not surpass CAPACITY or is illegally deleted at location, allow deletion
+ * @return Return if deletion surpasses CAPACITY or is attempted at an illegal location
 */
+void List::erase(int position) {
+   if(mySize == 0) {
+      cerr << "The list is empty";
+      return;
+   }
+   if(position<0 || position>=mySize) {
+      cerr << "Illegal location of deletion at position " << position;
+      return;
+   }
+   // Else if all paramaters are checked, iterate over data elements
+   // and shift elements to the left
+   for(int i=position; i<mySize; i++) {
+      myArray[i]= myArray[i+1];
+      // Accomodate for deletion
+      mySize--;
+   }
+}
