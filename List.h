@@ -3,7 +3,7 @@
 #ifndef M1_LINKEDLIST_LIST_H
 #define M1_LINKEDLIST_LIST_H
 /**
- * Inserting A Node At An Index in a linked list
+ * Inserting A Node At An Index in a Linked List
  * Course: CST 370 Design & Analysis of Algorithms
  * School: CSU, Monterey Bay
  * Professor: Dr. Feiling Jia
