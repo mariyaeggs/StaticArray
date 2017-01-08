@@ -1,7 +1,6 @@
 #include <cassert>
 #include "List.h"
 using namespace std;
-
 /**
  * Inserting A Node At An Index in a Linked List
  * Course: CST 370 Design & Analysis of Algorithms
@@ -45,4 +44,28 @@ void List::display(ostream &out) const {
 ostream & operator << (ostream & out, const List & aList) {
    aList.display(out);
    return out;
+}
+/**
+ * Function defines insertion methods for List class
+ *
+ * @param args If insert does not surpass CAPACITY or is illegally inserted, allow insertion
+ * @return Return if insertion surpasses CAPACITY or is illegal, maximum array index surpassed
+*/
+void List::insert(ElementType item, int position) {
+   if (mySize == CAPACITY) {
+      cerr << "No space available";
+      exit(1); // Terminate program
+   }
+   if (position<0 || position>mySize) {
+      cerr << "Illegal insertion at" << position;
+      return; // Return function
+   }
+   // Else if all parameters are approved. Decrement over data elements
+   // Shift elements to the right for memory allocation/space
+   for(int i=mySize; i>position; i--) {
+      myArray[i]= myArray[i-1];
+   }
+   // Add item at position and increment size of list.
+   myArray[position]= item;
+   mySize++;
 }
