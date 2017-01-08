@@ -18,9 +18,13 @@ int main() {
    // Check if list is empty()
    if (intList.empty()) {
       cout << "Empty linked list: " << intList;
-
    }
    // Test insert() function
+   for(int i=0; i<10; i++) {
+      cout << "Inserting element "<< i << "at position " << i/2 << endl;
+      intList.insert(i, i/2);
+      cout << intList << endl;
+   }
 
 
 }
