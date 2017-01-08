@@ -16,8 +16,6 @@ using namespace std;
 */
 const int CAPACITY = 100; // Capacity for 100 available data values
 typedef int ElementType;
-
-class ostream;
 /**
  * Header definitions for a linked list
  * class which inserts nodes at defined

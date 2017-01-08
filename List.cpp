@@ -57,7 +57,7 @@ void List::insert(ElementType item, int position) {
       exit(1); // Terminate program
    }
    if (position<0 || position>mySize) {
-      cerr << "Illegal insertion at position " << position;
+      cerr << "Illegal insertion at position " << position << ". List is unchanged.\n";
       return; // Return function
    }
    // Else if all parameters are checked. Decrement over data elements
@@ -81,7 +81,7 @@ void List::erase(int position) {
       return;
    }
    if(position<0 || position>=mySize) {
-      cerr << "Illegal location of deletion at position " << position;
+      cerr << " Illegal location of deletion at position " << position;
       return;
    }
    // Else if all paramaters are checked, iterate over data elements
