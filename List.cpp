@@ -69,3 +69,9 @@ void List::insert(ElementType item, int position) {
    myArray[position]= item;
    mySize++;
 }
+/**
+ * Function defines deletion methods for List class
+ *
+ * @param args If insert does not surpass CAPACITY or is illegally inserted, allow insertion
+ * @return Return if insertion surpasses CAPACITY or is illegal, maximum array index surpassed
+*/
