@@ -25,6 +25,15 @@ int main() {
       intList.insert(i, i/2);
       cout << intList << endl;
    }
-
-
+   // Test erase() function
+   int index;
+   while(!intList.empty()) { // While the list is not empty
+      cout << "Type the index of the element you would like to remove.";
+           cin >> index;
+      intList.erase(index); // Erase the element at the specified position
+   }
+   cout << "Now let's insert.";
+   for(int i=0; i<CAPACITY; i++) {
+      intList.insert(i,i);
+   }
 }
