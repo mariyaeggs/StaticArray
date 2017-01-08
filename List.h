@@ -1,4 +1,5 @@
 #include <iostream>
+using namespace std;
 
 #ifndef M1_LINKEDLIST_LIST_H
 #define M1_LINKEDLIST_LIST_H
@@ -25,6 +26,7 @@ class ostream;
  * @param args
  * @return
 */
+// --- Begin List class ---
 class List {
 
 public:
@@ -39,7 +41,7 @@ private:
     // Data members
     int mySize;
     ElementType myArray[CAPACITY];
-};
+}; // --- End List class ---
 // Output operator prototype
 ostream & operator << (ostream & out, const List & aList);
 
