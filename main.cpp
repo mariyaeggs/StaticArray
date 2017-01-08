@@ -15,5 +15,12 @@ using namespace std;
 int main() {
   // Test the class constructor
    List intList;
+   // Check if list is empty()
+   if (intList.empty()) {
+      cout << "Empty linked list: " << intList;
+
+   }
+   // Test insert() function
+
 
 }
